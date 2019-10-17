@@ -1,0 +1,711 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Fira Sans Condensed', sans-serif;
+	align-content: 
+}
+
+h1, h2, h3, h4 {
+    letter-spacing: 1px;
+  }
+
+
+.bold {
+    font-weight: bold;
+    letter-spacing: 1px;
+
+}
+
+.italic {
+    font-style: italic;
+
+	
+}
+
+a {
+    text-decoration: none;
+  }
+  
+
+.top_navbar{
+    width: 100%;
+    height: 100px;
+    background-color: #f6cc6f;
+    background-image: url("../images/headerTexture.png");
+    position: fixed;
+    box-shadow: 0px 10px 5px rgba(7, 7, 7, 0.3);;
+
+}
+
+
+.top_navbar-spacer{
+    width: 100%;
+    height: 95px;
+    background-color: #ff;
+
+}
+
+.top-logo img{
+    height: 80px;
+    margin-left: 3%;
+    padding-top: 10px;
+    float: left;
+}
+
+
+
+
+a {
+    text-decoration: none;
+  }
+  
+  nav {
+      float: right;
+      width: 0px;
+      background-color: brown;
+      margin-top: 15px;
+	  overflow-x: hidden;
+
+
+
+  }
+  
+  nav ul {
+      list-style: none;
+      margin: 0;
+      padding-left: 0;
+  }
+  
+  nav ul li {
+
+      display: block;
+      float: left;
+      position: relative;
+      text-decoration: none; 
+      padding: 1.01rem;
+
+      
+
+  }
+    
+  nav ul li a {
+    color: #fff;
+    font-family: 'Fira Sans Condensed', sans-serif;
+    font-weight: 400;
+  }
+  
+  nav ul li:hover {
+      background: rgb(119, 42, 42);
+      box-sizing: border-box;
+
+
+
+
+  }
+  
+  nav ul li ul {
+    background:  brown;
+    visibility: hidden;
+    opacity: 0;
+    min-width: 8rem;
+    position: absolute;
+    transition: all 0.5s ease;
+    margin-top: 1rem;
+    left: 0;
+    display: none;
+
+  }
+  
+  nav ul li:hover  ul,
+  ul li ul:hover {
+    visibility: visible;
+    opacity: 1;
+    display: block;
+
+  }
+  
+  nav ul li ul li {
+    clear: both;
+    width: 100%;
+  }
+
+
+#menuButton {
+	  float: right;
+      width: 30px;
+      background-color: brown;
+      margin-top: 15px;
+	  padding: 0.85rem;
+	display: block
+
+}
+
+#menuButton i{
+	font-size: 1.4em;
+	color:#fff;
+	
+}
+
+#menuButton i:hover{
+	font-size: 1.4em;
+	color:#333;
+	
+}
+
+
+#menuButtonClose {
+	  float: right;
+      width: 30px;
+      background-color: brown;
+      margin-top: 15px;
+	  padding: 0.87rem;
+	display: none
+
+}
+
+#menuButtonClose {
+	  float: right;
+      width: 30px;
+      background-color: brown;
+      margin-top: 15px;
+	  padding: 0.87rem;
+	display: none
+
+}
+
+
+#menuButtonClose i{
+	font-size: 1.4em;
+	color:#fff;
+	
+}
+
+#menuButtonClose i:hover{
+	font-size: 1.4em;
+	color:#333;
+	
+}
+
+
+.main-image{
+    width: 100%;
+    height: 80vh;
+    background-color: #f6cc6f;
+    background-image: url("../images/MainBBQsmoker.png") ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    text-align: center;
+    vertical-align: middle;
+    overflow-x: hidden;
+
+}
+
+
+.main-image-catering{
+    width: 100%;
+    height: 60vh;
+    background-color: #f6cc6f;
+    background-image: url("../images/catering2.jpg") ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    text-align: center;
+    vertical-align: middle;
+    overflow-x: hidden;
+
+}
+
+
+.main-image-fundraising{
+    width: 100%;
+    height: 60vh;
+    background-color: #f6cc6f;
+    background-image: url("../images/catering.jpg") ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    text-align: center;
+    vertical-align: middle;
+    overflow-x: hidden;
+
+}
+
+.main-image .header-copy img{
+max-width: 50%;
+}
+
+
+.main-image .header-copy h1{
+    color: #f1dfb8;
+    font-family: 'Fira Sans Condensed', sans-serif;
+    font-weight: 900;
+    font-size: 3em;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+
+.main-image-menu .header-copy h1, 
+.main-image-catering .header-copy h1,
+.main-image-fundraising .header-copy h1{
+    color: #f1dfb8;
+    padding-top: 10%;
+    font-family: 'Fira Sans Condensed', sans-serif;
+    font-weight: 900;
+    font-size: 4em;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+
+
+
+
+
+.quote-image{
+    width: 80%;
+    height: 20vh;
+    background-color: #4e3706;
+    background-image: url("../images/b_w-smokedMeat.png") ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    text-align: center;
+    padding: 20% 10%;
+    background-attachment: fixed;
+    display: block;
+
+
+}
+
+
+
+.quote-image .header-copy h2{
+    color: #fcefd2;
+    font-family: 'Fira Sans Condensed', sans-serif;
+    font-weight: 900;
+    top: 20%;
+    font-size: 2em;
+    text-shadow: 2px 2px 4px #000000;
+
+}
+
+.main-image .header-copy{
+    width: 70%;
+    margin: 0 auto 0 auto;
+    padding-top: 10%
+
+}
+
+
+.main-image .header-copy h2{
+    color:white;
+    font-family: 'Paytone One', sans-serif;
+    vertical-align: middle;
+    font-size: 2em;
+
+}
+section {
+    width: 100%;
+    background-image: url("../images/butcherPaper.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 10% 0;
+
+
+}
+
+
+section .col-wrapper{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 50px;
+    display: flex;
+    height: auto;
+
+
+}
+
+section .single-col-wrapper{
+    max-width: 900px;
+    margin: 0 auto;
+    padding-top: 10px;
+    height: auto;
+    padding: 0px 2%;
+
+
+
+}
+
+section .col-wrapper .three-col{
+    height: auto;
+    width: 33%;
+    padding: 5%;
+    margin: 0;
+
+}
+
+section .col-wrapper .three-col img{
+    max-width: 150px;
+    margin: 0 25% 10px 25%;
+
+}
+
+section .col-wrapper .three-col h2{
+    color: brown;
+    text-align: center;
+    margin-bottom: 15px;
+    font-family: 'Fira Sans Condensed', sans-serif;
+    font-weight: 900;
+    font-size: 1.8em;
+}
+
+
+
+
+section div h2{
+    text-align: center;
+    font-family: 'Fira Sans Condensed', sans-serif;
+    font-weight: 900;
+    font-size: 2em;
+    color: #888
+}
+
+
+/* menu page font styles */
+
+
+.main-image-menu{
+    width: 100%;
+    height: 60vh;
+    background-color: #f6cc6f;
+    background-image: url("../images/menuImage.jpg") ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    text-align: center;
+    vertical-align: middle;
+    overflow-x: hidden;
+
+}
+
+section .single-col-wrapper hr {
+    margin-bottom: 22px;
+}
+
+
+section .single-col-wrapper h2{
+    text-align: center;
+    font-family: 'Fira Sans Condensed', sans-serif;
+    font-weight: 900;
+    font-size: 1.5em;
+    color: #888;
+    border-top: 1px solid #bbb;
+    padding-top: 15px;
+}
+
+#meals, #sides, #sandwiches, #ontheside, #cater, #fundraising{
+    font-size: 2em;
+    color: brown;
+
+}
+
+
+
+
+
+section .single-col-wrapper p{
+    text-align: center;
+    margin-bottom: 8px;
+    font-family: 'Fira Sans Condensed', sans-serif;
+    font-weight: 400;
+    font-size: 1em;
+    color: #333;
+
+}
+
+
+section .single-col-wrapper h3{
+    text-align: center;
+    margin-bottom: 15px;
+    font-family: 'Fira Sans Condensed', sans-serif;
+    font-weight: 400;
+    font-size: 1.2em;
+    color: #444
+
+}
+
+
+.image-bar {
+    width: 100%;
+    height: auto;
+    display: -webkit-flex; /* Safari */
+    display: flex;
+
+
+}
+
+.image-bar img{
+    -webkit-flex: 1;  /* Safari 6.1+ */
+    -ms-flex: 1;  /* IE 10 */  
+    flex: 1;
+    width: 33%;
+    height: 100%;
+}
+    
+/* end of menu page font styles */
+
+
+/* Contact page font styles */
+
+.double-col-wrapper{
+    max-width: 900px;
+        margin: 0 auto;
+        padding: 50px;
+        display: flex;
+        height: auto;
+    
+    
+    }
+    
+    .required{
+      color: red;
+      font-style: italic; 
+    
+    }
+    
+    .contact-form{
+      text-align: left;
+      width: 45%;
+      padding: 20px 5% 10px 0px;
+    
+    
+    }
+    
+    .form-styling{
+      display: block;
+    }
+    
+    .form-styling .checkbox{
+      align-content: left;
+    }
+    
+    
+    
+    
+    .form-style-heading{
+        font-weight: bold;
+        font-style: italic;
+        border-bottom: 2px solid #ddd;
+        margin-bottom: 20px;
+        font-size: 15px;
+        padding-bottom: 3px;
+    }
+    .form-styling label{
+        display: block;
+        margin: 0px 0px 15px 0px;
+    }
+    
+    .form-styling label > span{
+        float: left;
+        padding-top: 8px;
+        padding-right: 5px;
+      text-align: left;
+      font-size: 1em;
+      font-weight: 400;
+      text-align: left;
+    
+    
+    }
+    
+    
+    .form-styling input.input-field, .form-styling {
+        width: 100%;	
+    }
+    .form-styling input.input-field, 
+    .form-styling #message-field, 
+     .form-styling .select-field{
+        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        border: 1px solid #C2C2C2;
+        box-shadow: 1px 1px 4px #EBEBEB;
+        -moz-box-shadow: 1px 1px 4px #EBEBEB;
+        -webkit-box-shadow: 1px 1px 4px #EBEBEB;
+        border-radius: 3px;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        padding: 7px;
+        outline: none;
+    }
+    .form-styling .input-field:focus, 
+    .form-styling #message-field:focus{
+        border: 1px solid #0C0;
+    }
+    .form-styling #message-field{
+        height:100px;
+        width: 100%;
+    }
+    .form-styling input[type=submit],
+    .form-styling input[type=button]{
+        border: none;
+        padding: 8px 15px 8px 15px;
+        background: brown;
+        color: #fff;
+        box-shadow: 1px 1px 4px #DADADA;
+        -moz-box-shadow: 1px 1px 4px #DADADA;
+        -webkit-box-shadow: 1px 1px 4px #DADADA;
+        border-radius: 3px;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+    }
+    .form-styling input[type=submit]:hover,
+    .form-styling input[type=button]:hover{
+        background: rgb(53, 13, 13);
+        color: #fff;
+    
+    }
+    
+    .map-area{ 
+      text-align: left;
+      width: 45%;
+      height: 400px;
+      padding: 20px 0 10px 5%;
+    }
+    
+    .map-area-heading{
+        font-weight: bold;
+        font-style: italic;
+        border-bottom: 2px solid #ddd;
+        margin-bottom: 20px;
+        font-size: 15px;
+        padding-bottom: 3px;
+    }
+    
+    .map-frame{
+      border: 1px solid #C2C2C2;
+        box-shadow: 1px 1px 4px #EBEBEB;
+        -moz-box-shadow: 1px 1px 4px #EBEBEB;
+        -webkit-box-shadow: 1px 1px 4px #EBEBEB;
+        border-radius: 3px;
+        -webkit-border-radius: 3px;
+      -moz-border-radius: 3px;
+      overflow-x: hidden;
+    
+    
+    }
+
+
+
+
+
+/* end of Contact page font styles */
+
+
+
+
+
+section #location{
+    padding-top: 200px; 
+    margin-top: -200px;
+}
+
+
+
+section .col-wrapper .three-col p{
+    color: #222222;
+    padding-bottom: 9px;
+    line-height: 1.1;
+    text-align: left;
+    margin-bottom: 7px;
+    font-family: 'Fira Sans Condensed', sans-serif;
+    font-weight: 400;
+    font-size: 1.0em;
+
+}
+
+section .col-wrapper .three-col li{
+    color: #222222;
+    font-family: 'Fira Sans Condensed', sans-serif;
+    font-weight: 400;
+    padding: 0 0 9px 2px;
+    margin-left: 4%;
+    font-size: 1.0em;
+}
+
+
+footer {
+ 
+    width: 100%;
+    height: 500px;
+    background-color: rgb(165, 42, 42);
+    color: bisque;
+    background-image: url("../images/bbqTrailer.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+;
+}
+
+
+
+
+footer .col-wrapper{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 50px;
+    display: flex;
+    height: auto;
+
+
+}
+
+footer .col-wrapper .three-col{
+    height: auto;
+    width: 25%;
+    padding: 3%;
+    margin: 0;
+
+}
+
+footer .col-wrapper .three-col img{
+    max-width: 150px;
+    margin: 0 25% 10px 25%;
+
+}
+
+footer .col-wrapper .three-col a{
+    color: bisque;
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 1.4em;
+    display: inline-block;
+    margin-right: 15%;
+}
+
+
+footer .col-wrapper .three-col a:hover{
+    color: rgb(100, 100, 100);
+
+}
+
+
+footer .col-wrapper p{
+    line-height: 1.5;
+	padding-bottom: 1rem
+
+
+}
+
+
+
+section h2{
+    color: black;
+    text-align: center;
+    margin-bottom: 15px;
+    font-family: 'Fira Sans Condensed', sans-serif;
+    font-weight: 900;
+    font-size: 1.9em;
+
+}
+

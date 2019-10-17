@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Masters BBQ Menu</title>
+        <meta name-field="description" content="">
+
+        <meta name-field="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="css/normalize.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+		<link href="https://use.fontawesome.com/releases/v5.0.7/css/all.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Fira+Sans+Condensed:400,400i,900&display=swap" rel="stylesheet">
+
+
+
+<script>
+
+  function validateForm() {
+
+         errorMessage = "";
+
+          var nameError = checkName();
+
+          var emailError = checkEmail();
+
+          var mesError = checkMessage();
+
+          var nameField = document.getElementById("name-field");
+          if (nameField.value == "") {
+              nameField.style.backgroundColor = "#FFC4CC";
+              errorMessage = errorMessage + "this is required \n";
+              nameField.focus();
+          }
+
+          var emailField = document.getElementById("email-field");
+          if (emailField.value == "") {
+              emailField.style.backgroundColor = "#FFC4CC";
+              errorMessage = errorMessage + "this is required \n";
+          }
+
+  
+          var messageField = document.getElementById("message-field");
+          if (messageField.value == "") {
+              messageField.style.background = "#FFC4CC";
+              errorMessage = errorMessage + "this is required \n";
+          }
+
+          if (!nameError && !emailError && !mesError && errorMessage  == "") {
+                    
+                    return true;
+                }
+          //alert(errorMessage);
+          return false;
+} 
+
+
+      function checkName() {
+                        // validate email field is not empty
+                 var nameField = document.getElementById("name-field");
+                 if (nameField.value == "") {
+                     nameField.style.backgroundColor = "#FFAAB5";
+                     document.getElementById('required-message-field-name').innerHTML = "* Required";
+                    //  nameField.focus();
+                     errorMessage = errorMessage + "this is required \n";
+                     return true;
+                  } else {
+                    nameField.style.backgroundColor = "white";
+                    document.getElementById('required-message-field-name').innerHTML = "";
+                    return false;
+                  }
+      }
+
+
+
+      function checkEmail() {
+                        // validate email field is not empty
+                 var emailField = document.getElementById("email-field");
+                 if (emailField.value == "") {
+                     emailField.style.backgroundColor = "#FFAAB5";
+                     document.getElementById('required-message-field-email').innerHTML = "* Required";
+                    //  emailField.focus();
+                     errorMessage = errorMessage + "this is required \n";
+                     return true;
+                    } else {
+                    emailField.style.backgroundColor = "white"
+                    document.getElementById('required-message-field-email').innerHTML = "";
+                    return false;
+                    }
+      }
+
+
+      function checkMessage() {
+                     messageField = document.getElementById("message-field");
+                 if (messageField.value == "") {
+                     messageField.style.backgroundColor = "#FFAAB5";
+                     document.getElementById('required-message-field-message').innerHTML = "* Required";
+                     messageField.focus();
+                     errorMessage = errorMessage + "this is required \n";
+                     return true;
+                    } else {
+                    messageField.style.backgroundColor = "white";
+                    document.getElementById('required-message-field-message').innerHTML = "";
+                    return false;
+                    }
+      }
+
+</script>
+
+<script>
+  function openNav() {
+    document.getElementById("menuBar").style.width = "750px";
+    document.getElementById("menuBar").style.overflowX = "visible";
+    document.getElementById("menuButton").style.display = "none";
+    document.getElementById("menuButtonClose").style.display = "block";
+  
+  
+  
+  }
+  
+  function closeNav() {
+    document.getElementById("menuBar").style.width = "0px";
+    document.getElementById("menuBar").style.overflowX = "hidden";
+    document.getElementById("menuButtonClose").style.display = "none";
+    document.getElementById("menuButton").style.display = "block";
+  
+  }
+  </script>
+
+
+
+    </head>
+
+
+    <body>
+    <div class="wrapper">
+        <div class="top_navbar">
+            <div class="top-logo">
+                <a href="index.htm"><img src="images/MastersLogo_Web.png" alt="Masters logo" ></a>
+            </div>
+
+			<div id="menuButton" onclick="openNav()">
+				<i class="fas fa-bars"></i>
+			</div>
+			
+			<div id="menuButtonClose" onclick="closeNav()">
+				<i class="far fa-times-circle"></i>
+			</div>
+			
+            <nav id="menuBar">
+                <ul>
+                  <li><a href="menu.htm">Menu</a>
+                    <ul class="dropdown">
+                      <li><a href="menu.htm#meals">Meals</a></li>
+                      <li><a href="menu.htm#sides">Sides</a></li>
+                      <li><a href="menu.htm#sandwiches">Sandwiches</a></li>
+                      <li><a href="menu.htm#ontheside">On the Side</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="catering.htm#sandwiches">Catering Menu</a></li>
+                  <li><a href="fundraising.htm">Fundraising</a></li>
+                  <li><a href="#">Specials</a></li>
+                  <li><a href="contact.htm">Sign Up</a></li>
+                  <li><a href="contact.htm">Contact</a></li>
+                  <li><a href="#location">Location</a></li>
+
+                </ul>
+              </nav>		
+        </div>
+
+        <div class="top_navbar-spacer">
+        
+        </div>
+
+
+
+<section>
+    <div class="single-col-wrapper">
+        <h2 id="contactForm">Contact Us</h2>
+        <h3>Send us a message-field and subscribe to our mailing list </h3>
+        <p><span class="italic">We promise only amazing BBQ deals, none of that SPAM!</span></p>
+        <hr/>
+    </div>
+        <div class="double-col-wrapper">
+
+            <div class="contact-form">
+
+              <div class="form-styling" >
+
+                <div class="form-style-heading">Provide your information</div>
+
+
+                <form name="contactForm" action="http://www.mastersbbq.com" onsubmit="return validateForm() ;" method="post" >
+
+
+                  <label for="name-field">
+                    <span>Name</span><span class="required" id="required-message-field-name"></span> 
+                    <input type="text" id="name-field" class="input-field" onblur="checkName();" value="" />
+                  </label>
+
+                  <label for="email-field">
+                    <span>Email Address</span><span class="required"  id="required-message-field-email"></span> 
+                    <input type="text" id="email-field" class="input-field" onblur="checkEmail();" value="" />
+                  </label>
+
+
+                  <label for="subscribe">
+                    <input type="checkbox"  id="subscribe" value="" />
+                    Subscribe to our mailing list
+                  </label>
+
+                  <label for="message-field">
+                    <span>Message</span><span class="required" id="required-message-field-message"></span> 
+                    <textarea id="message-field"></textarea>
+                  </label>
+                  
+                <label><input type="submit" value="Submit" /></label>
+
+              </div>
+              </form>
+            </div>
+              <div class="map-area">
+                <div class="map-area-heading">
+                    Location
+                </div>
+                <div class="map-frame">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2931.368843174573!2d-78.83131004838589!3d42.71708332036901!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d304b05012f929%3A0xe323f89142d96a9b!2sMaster&#39;s%20Barbecue%20Company!5e0!3m2!1sen!2sus!4v1570577644408!5m2!1sen!2sus" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+       </div>
+
+
+
+
+
+
+
+
+
+
+        </div> <!-- closes wrapper-->
+    </section>
+
+<footer>
+	 <div class="col-wrapper">
+
+ 	   <div class="three-col"> 
+                        <p><span class="bold">Location:</span></p>
+
+			<p>43 Buffalo Street</p>
+			<p>Hamburg, NY 14075</p>
+			<p><span class="italic">(Next to Braymiller’s Bowling)</span></p>
+			<p><span class="bold">716.393.6478</span></p>
+		</div>   
+		
+		<div class="three-col">        
+			<p><span class="bold">Hours:</span></p>
+			<p>Mon – Thur - 4:30pm – 9pm</p>
+			<p>Friday – Sunday - 11:30am – <span class="italic">Or until we’re out of food</span></p>
+			<p><span class="italic">*Open Mondays for Dinner 9/1-5/31*</span></p>
+			<p><span class="italic">May be impacted seasonally, please call ahead to double check!</span></p>
+	</div>
+		 
+		 
+		 
+		 <div class="three-col">
+                                <p><span class="bold">Find us at:</span></p>
+
+			 	<a href=""><div class="facebookIcon"><i class="fab fa-facebook-f"></i></div></a>
+				<a href=""><div class="twitterIcon"><i class="fab fa-twitter"></i></div></a>
+				<a href=""><div class="blackbk"><i class="fas fa-envelope"></i></div></a>
+			 
+		 </div>
+		 
+	</div>
+</footer>
+
+</div> <!-- closes wrapper -->
+
+
+
+</body>
+
+
+
+
+
+
+</html>
